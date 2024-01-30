@@ -1,9 +1,7 @@
 import os
 
-def clear_screen():
-    os.ssystem('cls' if os.name == 'nt' else 'clear')
-
 while True:
+    os.system("clear")
 
     print(" 0: Soma")
     print(" 1: Subtração")
@@ -61,10 +59,9 @@ while True:
     print("Deseja fazer outra operação? 0 - Sim, 1 - Não ")
     resposta = int(input())
 
-    if resposta != '0':
+    if resposta == 1:
         break
-    else:
-        clear_screen()
+    
 
 #Não consegui fazer voltar pro looping depois que o usuario aperta 0
 
